@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+*{
+	padding:0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	font-family:"Roboto Condensed", sans-serif; /*Ativar a fonte*/
+}
+
+.background{
+	background-image: url(eutroia.jpg); /*Colocar imagem de fundo*/
+	background-color: black;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100%;
+}
+header{
+		display: flex;
+		justify-content: space-around;
+		max-width: 100%;
+		align-items: center;
+		text-align: center;
+		padding-top: 1rem;
+}
+/*Arrumar o cabeçalho*/
+.cabeçalho-link{
+		display: flex; /*Um ao lado do outro*/
+		gap: 3rem;     /*Espaço entre as palavras*/
+		padding: 20px;
+		font-weight: 300;
+		cursor: pointer;
+		
+		
+}
+/*Arrumar as palavras do cabeçalho*/
+.cabeçalho-link a{
+	color: white;     /*Cor da fonte*/
+	padding: 15px;
+	font-size: 15px; /*Tamanho da fonte*/
+	
+}
+/*Colocar efeito nas palavras quando passa o mouse em cima*/
+.cabeçalho-link a:hover{
+	color: white; /*A cor que muda quando passar o mouse*/
+	transition:0.3s all; /*O tempo que dura quando passar o mouse*/
+}
+/*Arrumar a logo lateral*/
+.logo{
+	height:40px; /*Altura da logo*/
+	width: 40px; /*Largura da logo*/
+	background: transparent; /*Cor do fundo da logo*/
+	border: 1px solid white; /*Borda / Textura / Cor*/
+	color: white; /*Cor da fonte da logo*/
+	border-radius:50%;  /*Borda ficar arredondada*/
+	display: inline-flex; /*Conseguir centralizar ele*/
+	align-items: center;
+	justify-content: center;
+	font-size: 15px; /*Tamanho da logo*/
+	cursor: pointer; /*Quando passar o mouse mudar*/
+}
+/*Botão de Meu Contato*/
+button {
+	color: white;  /*Cor do botão*/
+	background: transparent; /*Fundo*/
+	border: solid 1px white; /*Borda*/
+	padding: 5px; /*Afastar da margem*/
+	border-radius: 15px; /*Arredondar*/
+	font-size: 15px; /*Tamanho da fonte*/
+	width: 150px; /*Aumentar o tamanho*/
+	cursor: pointer; /*Passar o mouse*/
+}
+/*Colocar efeito ao passar o mouse*/
+button:hover {
+	background-color: white; /*Cor que ira mudar*/
+	color: black; /*Cor da fonte*/
+	transition: 0.7s;
+}
+
+.inicio {
+	justify-content:center;
+	text-align:center;
+}
+
+.text h1{
+	color: white;
+	font-size: 20px;
+}
+
+
+.text span{
+	color: #39ff14; /*Mudar a cor do que esta dentro do <span> no html*/
+	font-size: 50px;
+}
+
+.text p{ /*Mudar a cor do que esta dentro do <p> no html*/
+	color: white;
+	font-size: 15px;
+	font-weight: 300;
+	margin-top:20px;
+	padding: 5px 50px 5px 50px;
+}
+
+.Hightlight{
+	justify-content:center;
+	text-align:center;
+}
+
+.text2{
+	padding: 50px 0 10px 50px;
+	color: white;
+}
+
+.container{
+	width: 100%; /* Altura*/
+	min-height: 100vh;
+	display: inline flex;
+	justify-content: space-between; /*espaço entre as imagens e a borda */
+	align-items: stretch; /* alinhar o item */
+	flex-wrap: wrap; /*quebrar a linha quando não caber mais na pagina */
+}
+
+.box{
+	width: 180px; /* Altura do quadrado*/
+	height: 200px; /* Largura do quadrado*/
+	border: 1px solid transparent; /* Tamanho Expessura Cor das linhas*/
+	border-radius: 10px; /* Arredondar as bordas */
+	padding: 30px 0 50px 50px; /* Distancia */
+	position: relative;
+	overflow: hidden;
+}
+
+.box img{ /* Posição das imagens */
+	position: absolute;
+	top: 0%;
+	left: 5%;
+	transform: translate (-50%, -50%);
+	font-size:5rem;
+	transition: .5s;
+}
+
+.box:hover img{ /* Para dar efeito ao passar o mouse na imagem */
+	font-size: 3rem;
+	transform: translate(90px, -200px)
+}
+
+.box .textproj{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 3;
+	top:0;
+	left: -100%;
+	transition: .5s ease-in-out;
+	padding: 40px 20px;
+}
+.box:hover .textproj{
+	transform: translateX(100%);
+	
+}
+.box .textproj p{
+	color: #39ff14;
+	letter-spacing: 0.5px;
+}
+
+.comp1{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.comp2{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.comp3{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.comp4{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.comp5{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.comp1 img{
+	width: 300px;
+	float: right; /* para ficar do lado direito*/
+}
+.comp2 img{
+	width: 300px;
+	float: left; /* para ficar do lado esquerdo*/
+}
+.comp3 img{
+	width: 300px;
+	float: right; /* para ficar do lado direito*/
+}
+.comp4 img{
+	width: 300px;
+	float: left; /* para ficar do lado esquerdo*/
+}
+.comp5 img{
+	width: 300px;
+	float: right; /* para ficar do lado direito*/
+}
+
+.competicoes{
+	justify-content:center;
+	text-align:center;
+	padding: 50px 50px 0 50px;
+}
+
+h2{
+	justify-content:center;
+	text-align:center;
+}
+
+.main{
+	height:70vh;
+}
+footer{
+		width:100%;
+		color: white;
+}
+
+.content{
+	background-color: black;
+	display:grid;
+	grid-template-columns: repeat(3,1fr);
+	padding: 1rem 3.5rem;
+	}
+
+.midias{
+	display: flex;
+	gap:2rem;
+	margin-top: 1.5rem;
+	
+}
+.midias .footer-links{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	height: 2.5rem;
+	width:2.5rem;
+	color:white;
+	border-radius:50%;
+	transition: all 0.4s;
+}
+.midias .footer-links:hover{
+	opacity:0.8;
+}
+.midias .footer-links i{
+	font-size: 1.25rem;
+}
+#instagram{
+	background:linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+#facebook{
+	background-color: #4267b3;
+}
+#linkedin{
+	background-color: #0e76a8;
+}
+
+.footer-list{
+	display:flex;
+	flex-direction: column;
+	gap: 0.75rem;
+	list-style: none;
+}
+.footer-list .footer-links{
+	color: white;
+	transition: all 0.4s;
+}
+
+.footer-list .footer-links:hover{
+	color: green;
+}
+
+.email h3:hover{
+	color: green;
+}

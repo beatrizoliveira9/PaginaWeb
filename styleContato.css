@@ -1,0 +1,236 @@
+/* Importei uma fonte do Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
+/*Codigo padrão*/
+*{
+	margin: 0; /*Tirar todas as margens*/
+	padding:0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none; /*Tirar os pontos da lista*/
+	font-family:"Roboto Condensed", sans-serif; /*Ativar a fonte*/
+}
+
+body{
+	overflow:scrool;
+}
+
+
+.background{
+	background-color: ;
+	background-image: url(beatriz.jpg); /*Colocar imagem de fundo*/
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100vh;
+}
+/*Arrumar o cabeçalho*/
+header{
+		display: flex;
+		justify-content: space-around;
+		max-width: 100%;
+		align-items: center;
+		text-align: center;
+		padding-top: 2rem;
+}
+/*Arrumar o cabeçalho*/
+.cabeçalho-link{
+		display: flex; /*Um ao lado do outro*/
+		gap: 3rem;     /*Espaço entre as palavras*/
+		padding: 20px;
+		font-weight: 300;
+		cursor: pointer;
+		
+}
+/*Arrumar as palavras do cabeçalho COMO QUE ALINHA COM A LOGO E O BOTAO???*/
+.cabeçalho-link a{
+	color: white;     /*Cor da fonte*/
+	padding: 15px;
+	font-size: 15px; /*Tamanho da fonte*/
+	
+}
+/*Colocar efeito nas palavras quando passa o mouse em cima*/
+.cabeçalho-link a:hover{
+	color: white; /*A cor que muda quando passar o mouse*/
+	transition:0.3s all; /*O tempo que dura quando passar o mouse*/
+}
+/*Arrumar a logo lateral*/
+.logo{
+	height:40px; /*Altura da logo*/
+	width: 40px; /*Largura da logo*/
+	background: transparent; /*Cor do fundo da logo*/
+	border: 1px solid white; /*Borda / Textura / Cor*/
+	color: white; /*Cor da fonte da logo*/
+	border-radius:50%;  /*Borda ficar arredondada*/
+	display: inline-flex; /*Conseguir centralizar ele*/
+	align-items: center;
+	justify-content: center;
+	font-size: 15px; /*Tamanho da logo*/
+	cursor: pointer; /*Quando passar o mouse mudar*/
+}
+/*Botão de Meu Contato*/
+button {
+	color: white;  /*Cor do botão*/
+	background: transparent; /*Fundo*/
+	border: solid 1px white; /*Borda*/
+	padding: 5px; /*Afastar da margem*/
+	border-radius: 15px; /*Arredondar*/
+	font-size: 15px; /*Tamanho da fonte*/
+	width: 150px; /*Aumentar o tamanho*/
+	cursor: pointer; /*Passar o mouse*/
+}
+/*Colocar efeito ao passar o mouse*/
+button:hover {
+	background-color: white; /*Cor que ira mudar*/
+	color: black; /*Cor da fonte*/
+	transition: 0.7s;
+}
+/*Formulario*/
+.box{
+	display: flex;
+	justify-content: center; /*alinhar na horizontal*/
+	align-items:center; /*alinhar na vertical*/
+	height: center;
+	width: center;
+	background-color: transparent; /*cor do fundo */
+	padding: 10px 50px 50px 50px;
+	border-radius: 10px;
+	color: white;	/*cor da fonte*/
+	overflow: hidden;
+}
+
+fieldset{
+	border: 3px solid white; /*Cor da borda do formulario */
+	padding: 5px 10px;
+	
+}
+
+legend{
+	border: 1px solid white;
+	padding: 10px;
+	text-align: center;
+	background-color: white;
+	border-radius: 10px; 
+	color: black;
+}
+
+.box form{
+	display:flex;
+	justify-content: center; /*alinhar na horizontal*/
+	align-items:stretch;
+	flex-direction:column; /*deixar em coluna*/
+	gap:1rem; /*espaço entre os blocos*/
+	min-width:30%;
+	padding: 10px;
+}
+
+.box p{
+	font-size: 15px;
+}
+
+.box label{
+	font-size: 15px;
+	
+}
+
+.inputs{
+	padding: 6px 5px;
+	outline: none;
+	border-radius: 5px;
+	background-color:black;
+	border: 2px solid black;
+	color: white;
+	width:100%;
+	box-sizing: border-box; 
+	transition: .3s;
+	resize: none; /*tirar o redimensionamento do textarea */
+}
+
+
+.inputs:focus{ /*ficar roxo quando clica*/
+	border-color: purple;
+}
+
+.box-select{
+	display: flex;
+	justify-content: space-between;
+}
+
+.box textarea{
+	padding: 6px 5px;
+	outline: none;
+	border-radius: 5px;
+	background-color:black;
+	border: 2px solid black;
+	color: white;
+	width:100%;
+	box-sizing: border-box; 
+	transition: .3s;
+}
+
+.main{
+	height:70vh;
+}
+footer{
+		width:100%;
+		color: white;
+}
+
+.content{
+	background-color: black;
+	display:grid;
+	grid-template-columns: repeat(3,1fr);
+	padding: 1rem 3.5rem;
+	}
+
+.midias{
+	display: flex;
+	gap:2rem;
+	margin-top: 1.5rem;
+	
+}
+.midias .footer-links{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	height: 2.5rem;
+	width:2.5rem;
+	color:white;
+	border-radius:50%;
+	transition: all 0.4s;
+}
+.midias .footer-links:hover{
+	opacity:0.8;
+}
+.midias .footer-links i{
+	font-size: 1.25rem;
+}
+#instagram{
+	background:linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+#facebook{
+	background-color: #4267b3;
+}
+#linkedin{
+	background-color: #0e76a8;
+}
+
+.footer-list{
+	display:flex;
+	flex-direction: column;
+	gap: 0.75rem;
+	list-style: none;
+}
+.footer-list .footer-links{
+	color: white;
+	transition: all 0.4s;
+}
+
+.footer-list .footer-links:hover{
+	color: purple;
+}
+
+.email h3:hover{
+	color: purple;
+}

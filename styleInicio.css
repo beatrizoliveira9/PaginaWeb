@@ -1,0 +1,113 @@
+/* Importei uma fonte do Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
+/*Codigo padrão*/
+*{
+	margin: 0; /*Tirar todas as margens*/
+	padding:0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none; /*Tirar os pontos da lista*/
+	font-family:"Roboto Condensed", sans-serif; /*Ativar a fonte*/
+}
+
+body{
+	overflow:hidden; /* Ocultar os elementos que passam da margem da tela*/
+}
+
+.background{ /* Fundo da pagina*/
+	background-color: black; /* Cor */
+	background-image: url(beatriz.jpg); /*Colocar imagem de fundo*/
+	background-size: cover; /* Preencher toda a pagina com a cor ou imagem */
+	background-position: center; /* Posição da cor ou imagem na pagina */
+	width: 100%; /* Largura*/
+	height: 100vh; /* Altura*/
+}
+/*Arrumar o cabeçalho*/
+header{
+		display: flex;
+		justify-content: space-around;
+		max-width: 100%;
+		align-items: center;
+		text-align: center;
+		padding-top: 1rem;
+}
+/*Arrumar o cabeçalho*/
+.cabeçalho-link{
+		display: flex; /*Um ao lado do outro*/
+		gap: 3rem;     /*Espaço entre as palavras*/
+		padding: 20px;
+		font-weight: 300;
+		cursor: pointer;
+		
+}
+/*Arrumar as palavras do cabeçalho*/
+.cabeçalho-link a{
+	color: white;     /*Cor da fonte*/
+	padding: 15px;
+	font-size: 15px; /*Tamanho da fonte*/
+	
+}
+/*Colocar efeito nas palavras quando passa o mouse em cima*/
+.cabeçalho-link a:hover{
+	color: white; /*A cor que muda quando passar o mouse*/
+	transition:0.3s all; /*O tempo que dura quando passar o mouse*/
+}
+/*Arrumar a logo lateral*/
+.logo{
+	height:40px; /*Altura da logo*/
+	width: 40px; /*Largura da logo*/
+	background: transparent; /*Cor do fundo da logo*/
+	border: 1px solid white; /*Borda / Textura / Cor*/
+	color: white; /*Cor da fonte da logo*/
+	border-radius:50%;  /*Borda ficar arredondada*/
+	display: inline-flex; /*Conseguir centralizar ele*/
+	align-items: center;
+	justify-content: center;
+	font-size: 15px; /*Tamanho da logo*/
+	cursor: pointer; /*Quando passar o mouse mudar*/
+}
+/*Botão de Meu Contato*/
+button {
+	color: white;  /*Cor do botão*/
+	background: transparent; /*Fundo*/
+	border: solid 1px white; /*Borda*/
+	padding: 5px; /*Afastar da margem*/
+	border-radius: 15px; /*Arredondar*/
+	font-size: 15px; /*Tamanho da fonte*/
+	width: 150px; /*Aumentar o tamanho*/
+	cursor: pointer; /*Passar o mouse*/
+}
+/*Colocar efeito ao passar o mouse*/
+button:hover {
+	background-color: white; /*Cor que ira mudar*/
+	color: black; /*Cor da fonte*/
+	transition: 0.7s;
+}
+/*CABEÇALHO ^ ------- */
+
+.container-text{
+	padding: 50px 0 0 50px;  /*Movemos todo o conteudo*/
+	font-size: 50px;
+}
+
+.text h1{
+	color: white;
+}
+
+.text h2{
+	color: white;/*Mudar a cor do que esta dentro do <h2> no html*/
+	margin-top: 10px;
+}
+
+.text span{ /*Mudar do que esta dentro do <span> no html*/
+	color: #c8a2e8;
+}
+
+.text p{ /*Mudar o que esta dentro do <p> no html*/
+	color: white;
+	font-size: 20px;
+	font-weight: 300;
+	margin-top:15px;
+}

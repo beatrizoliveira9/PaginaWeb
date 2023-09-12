@@ -1,0 +1,120 @@
+<!DOCTYPE html> <!-- Declaração para informar ao navegador qual é a versão do html utilizada no arquivo-->
+<html lang="pt-br"> <!--Aqui começa tudo o que irá na pagina e colocamos o lang para definir o idioma da pagina -->
+	<head> <!--Cabeçalho da pagina, o conjunto de informações da pagina. Essas informações não são visiveis no site -->
+		<meta charset="utf-8"> <!-- Conjunto de caracteres a ser utilizado na exibição do conteúdo do site. Este é o conjunto mais utilizado na web-->
+		
+		<title>Entre em Contato</title>  <!-- Para colocar titulo na aba do navegador -->
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"> <!--Para pegar a logo lateral -->
+		
+		<link rel="icon" type="image/x-icon" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"> <!-- Para colocar icone na aba do navegador -->
+			
+		<link rel="stylesheet" href="styleContato.css"> <!-- Para arquivo abrir o arquivo CSS na pagina html-->
+		
+	</head>
+
+	<body> <!-- Aqui começa o corpo do site, todo conteúdo visível --> 
+			
+		<div class="background"><!-- Essa é a parte do fundo da pagina, no css adicionamos uma imagem e tudo que estives dentro, estara em cima da imagem -->
+			<header> <!-- Cabeçalho para mudar as paginas  -->
+				
+				<div class="logo"> <!--- Logo lateral -->
+					<i class="fa-solid fa-b"></i> <!-- Pegou o B do site colocado no head -->
+				</div>
+				
+				<div class="cabeçalho-link"> <!--- Uma div para configurar o cabeçalho no css -->
+					<li> <!-- Uma lista para alinhar os itens do cabeçalho -->
+						<a href="Inicio.html"> Inicio </a> <!-- Aqui ira levar para a pagina Inicio -->
+					</li>
+					<li>
+						<a href="Sobre.html"> Sobre </a> <!-- Aqui ira levar para a pagina Sobre mim -->
+					</li>
+					<li>
+						<a href="Troia.html"> Troia </a> <!-- Aqui ira levar para a pagina Troia -->
+					</li>
+					<button href="contato.html"> Entre em Contato </button> <!-- Aqui ira levar para a pagina Entre em contato -->
+				</div>
+			</header>
+			
+			<div class="box"> <!--Aqui criei uma div para conseguir configurar todo o formulario no css -->
+				<fieldset> <!--- Para agrupar todo o formulario -->
+						<legend> Entre em Contato </legend> <!--Escrita inicial do formulario -->
+					<form action="Inicio.html"> <!--Aqui começa o formulario -->
+						
+						<div>
+							<input type="text" placeholder="Digite seu nome" class="inputs" required> <!--Aqui para a pessoa colocar o nome, o type text é para preencher com texto e com required para ser obrigatorio o preenchimento-->
+						</div>
+						
+						<div>
+							<input type="email" placeholder="Digite seu email" class="inputs" required> <!--Aqui para a pessoa colocar o email, o type email é para preencher com o @ e com required para ser obrigatorio o preenchimento-->
+						</div> 
+						
+						<div>
+							<input type="tel" placeholder="Digite seu telefone" class="inputs" required> <!--Aqui para a pessoa colocar o telefone, o type tel é para abrir o teclado numerico e com required para ser obrigatorio o preenchimento-->
+						</div>
+						<p> Data de Nascimento: </p>
+						<div>
+							<input type="date" placeholder="Data de Nascimento" class="inputs" required> <!--Aqui para a pessoa colocar a data de nascimento, type date é para ser colocado uma dara e com required para ser obrigatorio o preenchimento-->
+						</div>
+						
+						<p>Sexo:</p>
+						<div class="box-select"> <!--Aqui para a pessoa colocar o genero, o radio com name igual a pessoa não pode preencher dois ao mesmo tempo e com required para ser obrigatorio o preenchimento-->
+							<input type="radio" id="feminino" name="genero" value="feminino" required> 
+								<label for="feminino"> Feminino </label>
+							<input type="radio" id="masculino" name="genero" value="masculino" required>
+								<label for="masculino"> Masculino </label>
+							<input type="radio" id="outro" name="genero" value="outro" required>
+								<label for="outro"> Outro </label>
+						</div>
+						<textarea name="mensagem" id="mensagem" cols="20" rows="3" class="inputs" placeholder="Digite sua mensagem"required></textarea> <!--Aqui para a pessoa colocar o texto, o textarea é uma caixa de texto maior e com required para ser obrigatorio o preenchimento-->
+						<button> Enviar </button> <!--Aqui a pessoa clica para enviar e volta para a tela inicial -->
+					</form>
+				</fieldset>
+			</div>
+			
+		</div>
+		
+		<main>
+			<footer>
+				<div class="content">
+					<div class="contacts">
+						<p> Essas são minhas redes sociais</p>
+						<div class="midias">
+							<a href="https://instagram.com/_euzebio?igshid=MzRlODBiNWFlZA==" class="footer-links" id="instagram">
+								<i class="fa-brands fa-instagram"></i>
+							</a>
+							<a href="https://www.linkedin.com/in/beatriz-euzebio-972011193" class="footer-links" id="linkedin">
+								<i class="fa-brands fa-linkedin"></i>
+							</a>
+							<a href="https://www.facebook.com/beatriz.oliveira1902?mibextid=ZbWKwL" class="footer-links" id="facebook">
+								<i class="fa-brands fa-facebook"></i>
+							</a>
+						</div>
+					</div>
+					<div>
+						<ul class="footer-list">
+							
+							<li>
+								<a href="Inicio.html" class="footer-links"> Inicio </a>
+							</li>
+							<li>
+								<a href="Sobre.html" class="footer-links"> Sobre </a>
+							</li>
+							<li>
+								<a href="Troia.html" class="footer-links"> Troia</a>
+							</li>
+							<li>
+								<a href="contato.html" class="footer-links"> Entre em Contato</a>
+							</li>
+						</ul>
+					</div>
+					
+					<div class="email">
+					<h2> Email </h2>
+					<h3> beatriz.euzebio@gmail.com</h3>
+					</div>
+				</div>
+			</footer>
+		</main>
+	</body>
+</html>
